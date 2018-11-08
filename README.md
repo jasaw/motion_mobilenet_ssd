@@ -8,6 +8,7 @@ Upstream Motion software currently does not support Movidius yet, but if you are
 
 1. Install Movidius NCSDKv2. Follow the [installation manual](https://movidius.github.io/ncsdk/install.html). Note that the NCSDKv2 may screw up your existing libraries, so I recommend trying this on a sacrificial machine. Alternatively, you could try installing just the API by running `sudo make api` (I have **not** tested this one).
 2. Git clone the [movidius branch](https://github.com/jasaw/motion/tree/movidius) into any directory you like.
+    - `git clone -b movidius https://github.com/jasaw/motion.git`
 3. Go into the directory and run:
     - `autoreconf -fiv`
     - `./configure`
